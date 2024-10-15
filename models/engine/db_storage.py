@@ -4,17 +4,19 @@ Contains the class DBStorage
 """
 
 import models
-from models.book import Book
-from models.basemodel import BaseModel, Base
-from models.member import Member
-from models.transaction import Transaction
+from mdoels.User import User
+from models.Book import Book
+from models.Basemodel import BaseModel, Base
+from models.Member import Member
+from models.Transaction import Transaction
 
 from os import getenv
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
-classes = {"Book": Book, "Member": Member, "Transaction": Transaction}
+classes = {"User": User, "Book": Book, "Member": Member,
+           "Transaction": Transaction}
 
 
 class DBStorage:
