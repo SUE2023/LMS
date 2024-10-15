@@ -5,13 +5,14 @@ Contains the FileStorage class
 
 import json
 import models
+from models.User import User
 from models.BaseModel import BaseModel
 from models.Member import Member
 from models.Book import Book
 from models.Transaction import Transaction
 
 
-classes = {"BaseModel": BaseModel, "Member": Member,
+classes = {"User": User, "BaseModel": BaseModel, "Member": Member,
            "Book": Book, "Transaction": Transaction}
 
 
