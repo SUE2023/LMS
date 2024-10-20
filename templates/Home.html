@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Management, System, Record, Office">
+    <meta name="description" content="{{ description }}">
+    <meta name="revised" content="Document, 15/06/2024">
+    <meta name="author" content="Software Engineering Department">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Home.css') }}">
+    <script src="{{ url_for('static', filename='Script.js') }}" type="text/javascript"></script>
+</head>
+<body>
+    <div id="big_wrapper">
+        <header id="top_header">
+            <img class="Logo" src="{{ url_for('static', filename='Logo.jpeg') }}" alt="Logo Power Session Library" width="150">
+			<br>
+        </header>
+
+        <nav id="top_menu">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="#Board">About Us</a></li>
+                <li><a href="#Director">Membership</a></li>
+            </ul>
+        </nav>
+
+        <div id="About_Us">
+            <h2> About Us </h2>
+            <p id="Description"> {{ about_us_text }} </p>
+        </div>
+	
+        <div id="Membership">
+            <br>
+            <h2> Membership</h2>
+            <p id="Description"> {{ membership_info }} </p>
+        </div>
+	 
+        <audio controls autoplay muted>
+            <source src="{{ url_for('static', filename='audio_sample.ogg') }}" type="audio/ogg">
+            <source src="{{ url_for('static', filename='audio_sample.mp3') }}" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+				
+        <video width="400" controls>
+            <source src="{{ url_for('static', filename='video_sample.mp4') }}" type="video/mp4">
+            <source src="{{ url_for('static', filename='video_sample.ogg') }}" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+	
+    </div>
+
+    <footer id="the_footer">
+        <a class="Showcase" href="https://github.com/SUE2023/LibraryManagementSystem">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+		
+        <a href="https://www.linkedin.com/in/sewe-susan" id="social_icon">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+		
+        <a href="https://x.com/i/connect_people?user_id=1799109889223954432" id="social_icon">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <br><br>
+        Copyright &copy; 2024, LibraryManagementSystem. All Rights Reserved
+    </footer>
+	
+</body>
+</html>
