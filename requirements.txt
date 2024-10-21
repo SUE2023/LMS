@@ -1,6 +1,7 @@
 python3 -m venv LibraryManagementSystem
 source LibraryManagementSystem/bin/activate
 install Flask 
+install flask-wtf
 install flask-cors
 install flasgger
 install pyyaml
