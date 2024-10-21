@@ -6,7 +6,7 @@ install flask-cors
 install flasgger
 install pyyaml
 install flask-login
-install flask-sqlalchemy
+install flask_sqlalchemy
 install bcrypt
 install pymysql
 sudo apt update 
